@@ -14,7 +14,7 @@ hallo !!
     xhr.open("GET",
         "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json");
     //xhr.setRequestHeader("Host", "lpse.pasamanbaratkab.go.id");
-    //xhr.setRequestHeader("Origin", "http://lpse.pasamanbaratkab.go.id");
+    xhr.setRequestHeader("Origin", "https://data.bmkg.go.id/");
 
     xhr.send(data);
 </script>
