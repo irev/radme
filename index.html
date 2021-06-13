@@ -1,20 +1,15 @@
 hallo !!
 <script>
-    const data = null;
+ const settings = {
+        "async": true,
+        "crossDomain": true,
+        "url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+        "method": "GET",
+        "headers": {}
+    };
 
-    const xhr = new XMLHttpRequest();
-    xhr.withCredentials = true;
-
-    xhr.addEventListener("readystatechange", function () {
-        if (this.readyState === this.DONE) {
-            console.log(this.responseText);
-        }
+    $.ajax(settings).done(function (response) {
+        console.log(response);
     });
-
-    xhr.open("GET","https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json");
-    xhr.setRequestHeader("Host", "https://data.bmkg.go.id/");
-    xhr.setRequestHeader("Origin", "https://data.bmkg.go.id/");
-
-    xhr.send(data);
 </script>
 
