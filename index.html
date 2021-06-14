@@ -1,9 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Untitled</title>
+        <meta name="description" content="This is an example of a meta description.">
+        <link rel="stylesheet" type="text/css" href="theme.css">
+
+        <!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+    </head>
+
+    <body>
+
+
+
+
+
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+        <!-- <iframe width="100%" height="50%"
+    src="http://lpse.pasamanbaratkab.go.id/eproc4/dt/lelang?authenticityToken=1c538696f3f858e2e23e3f148bd6885939175b10"
+    frameborder="0"></iframe> -->
+
+        <script>
+            // const settings = {
+            //     "async": true,
+            //     "crossDomain": true,
+            //     "url": "http://lpse.pasamanbaratkab.go.id/eproc4/dt/lelang?draw=4&columns%5B0%5D%5Bdata%5D=0&columns%5B0%5D%5Bname%5D=&columns%5B0%5D%5Bsearchable%5D=true&columns%5B0%5D%5Borderable%5D=true&columns%5B0%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B0%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B1%5D%5Bdata%5D=1&columns%5B1%5D%5Bname%5D=&columns%5B1%5D%5Bsearchable%5D=true&columns%5B1%5D%5Borderable%5D=true&columns%5B1%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B1%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B2%5D%5Bdata%5D=2&columns%5B2%5D%5Bname%5D=&columns%5B2%5D%5Bsearchable%5D=true&columns%5B2%5D%5Borderable%5D=true&columns%5B2%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B2%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B3%5D%5Bdata%5D=3&columns%5B3%5D%5Bname%5D=&columns%5B3%5D%5Bsearchable%5D=false&columns%5B3%5D%5Borderable%5D=false&columns%5B3%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B3%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B4%5D%5Bdata%5D=4&columns%5B4%5D%5Bname%5D=&columns%5B4%5D%5Bsearchable%5D=true&columns%5B4%5D%5Borderable%5D=true&columns%5B4%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B4%5D%5Bsearch%5D%5Bregex%5D=false&order%5B0%5D%5Bcolumn%5D=0&order%5B0%5D%5Bdir%5D=desc&start=0&length=467&search%5Bvalue%5D=&search%5Bregex%5D=false&authenticityToken=7312c7a8053a86078a2c809a205f5492ced768d3&_=1623610558991",
+            //     "method": "GET",
+            //     "headers": {
+            //         "Host": "lpse.pasamanbaratkab.go.id",
+            //         "Origin": "http://lpse.pasamanbaratkab.go.id/"
+            //     }
+            // };
+
+            // $.ajax(settings).done(function (response) {
+            //     console.log(response);
+            // });
+
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) == 0) {
+                    //const b = c.substring(nameEQ.length, c.length);   
+                    console.log(c.substring(nameEQ.length, c.length));
+                }
+            }
+
+        </script>
+
+
 hallo !!
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
- const settings = {
+    const settings = {
         "async": true,
         "crossDomain": true,
         "url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
@@ -15,4 +73,10 @@ hallo !!
         console.log(response);
     });
 </script>
+    </body>
+
+</html>
+
+
+
 
